@@ -1,2 +1,2 @@
-export const BASE_URL = '';
+export {};
 //# sourceMappingURL=global.js.map
