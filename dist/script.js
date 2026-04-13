@@ -6,7 +6,6 @@ async function handleData() {
         return;
     }
     const transacoes = data.map(normalizarTransacao);
-    console.log(transacoes);
 }
 handleData();
 //# sourceMappingURL=script.js.map
