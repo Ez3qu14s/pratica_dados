@@ -1,7 +1,10 @@
 export default function stringParaData(dataString: string) {
-  const data = new Date();
-  // console.log(dataString);
-  console.log(data);
+  const dataTime = dataString.split(' ')
+  const [dia, mes, ano] = dataTime[0].split('/')
+  
+  const data = new Date(ano, mes -1, dia)
+
+  console.log(data.getDate());
   
   
 }
