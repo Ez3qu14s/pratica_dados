@@ -1,5 +1,6 @@
 import fetchData from "./fetchData.js";
 import normalizarTransacao from "./normalizarTransacao.js";
+import preencherTabela from "./preencherTabela.js";
 
 async function handleData() {
   const data = await fetchData<TransacaoAPI[]>(
@@ -11,7 +12,7 @@ async function handleData() {
   }
 
   const transacoes = data.map(normalizarTransacao);
-  console.log(transacoes);
+  preencherTabela(transacoes)
 }
 
 handleData();
