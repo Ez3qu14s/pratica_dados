@@ -1,6 +1,5 @@
 function preencherTabela(transacoes) {
     const tableTBody = document.querySelector('table tbody');
-    console.log(transacoes);
     if (!tableTBody)
         return;
     transacoes.forEach(item => {

@@ -1,0 +1,1 @@
+{"version":3,"file":"preencherEstatisticas.js","sourceRoot":"","sources":["../src/preencherEstatisticas.ts"],"names":[],"mappings":"AAAA,OAAO,YAAY,MAAM,yBAAyB,CAAC;AAEnD,MAAM,CAAC,OAAO,UAAU,qBAAqB,CAAC,UAAuB;IACnE,MAAM,YAAY,GAAG,IAAI,YAAY,CAAC,UAAU,CAAC,CAAA;IAEjD,OAAO,CAAC,GAAG,CAAC,YAAY,CAAC,KAAK,EAAE,CAAC,CAAC;AAEpC,CAAC"}
