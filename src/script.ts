@@ -13,6 +13,7 @@ async function handleData() {
   }
 
   const transacoes = data.map(normalizarTransacao);
+  
   preencherTabela(transacoes)
   preencherEstatisticas(transacoes)
 }

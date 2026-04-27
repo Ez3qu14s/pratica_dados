@@ -6,7 +6,6 @@ export default class Estatisticas {
 
   total() {
     return this.transacoes.reduce((total, valor) => {
-      
       return total += valor.valor != null ? valor.valor : 0
     }, 0)
   }
