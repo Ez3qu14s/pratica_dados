@@ -1,11 +1,13 @@
 export default class Estatisticas {
     transacoes;
+    total;
     constructor(transacoes) {
         this.transacoes = transacoes;
+        this.total = this.setTotal();
     }
-    total() {
-        return this.transacoes.reduce((total, valor) => {
-            return total += valor.valor != null ? valor.valor : 0;
+    setTotal() {
+        return this.transacoes.reduce((acc, valor) => {
+            return (acc += valor.valor != null ? valor.valor : 0);
         }, 0);
     }
 }
