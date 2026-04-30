@@ -10,4 +10,6 @@ export default function preencherEstatisticas(transacoes: Transacao[]): void {
       currency: "BRL",
     });
   }
+
+  console.log(estatisticas.countyBy("status", "Paga"));
 }

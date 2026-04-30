@@ -11,4 +11,12 @@ export default class Estatisticas {
       return (acc += valor.valor != null ? valor.valor : 0);
     }, 0);
   }
+
+  public countyBy(prop: keyof Transacao, tipo: string): number {
+    const quantidade = this.transacoes.filter((item: Transacao) => {
+      return item[prop] === tipo;
+    }).length;
+
+    return quantidade;
+  }
 }

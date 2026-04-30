@@ -8,5 +8,6 @@ export default function preencherEstatisticas(transacoes) {
             currency: "BRL",
         });
     }
+    console.log(estatisticas.countyBy("status", "Paga"));
 }
 //# sourceMappingURL=preencherEstatisticas.js.map

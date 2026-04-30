@@ -10,5 +10,11 @@ export default class Estatisticas {
             return (acc += valor.valor != null ? valor.valor : 0);
         }, 0);
     }
+    countyBy(prop, tipo) {
+        const quantidade = this.transacoes.filter((item) => {
+            return item[prop] === tipo;
+        }).length;
+        return quantidade;
+    }
 }
 //# sourceMappingURL=EstatisticasTotais.js.map
