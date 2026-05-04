@@ -23,7 +23,8 @@
       padding: .5rem 1rem;
     }
 
-    h2 p {
+    h2,
+    p {
       margin-left: 1rem;
     }
 
@@ -31,16 +32,25 @@
       background-color: ghostwhite;
     }
 
-
-
     h2 {
       border-top: 6px solid ghostwhite;
-      padding: 1rem;
+      padding-top: 1rem;
+    }
+
+    #pagamento,
+    #status {
+      border-top: 6px solid ghostwhite;
     }
   </style>
 </head>
 
 <body>
+  <h2>Estatísticas</h2>
+  <p id="valor_total">Total: <span></span></p>
+
+  <div id="pagamento"></div>
+  <div id="status"></div>
+
   <h2>Dados</h2>
   <table>
     <thead>

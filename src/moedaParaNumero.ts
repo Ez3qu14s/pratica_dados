@@ -1,10 +1,9 @@
 export default function moedaParaNumero(num: string) {
-  const spliceNum = num.split(',')[0].replace('.', '')
-  const conversao = Number(spliceNum)
+  const spliceNum = num.split(',')
 
   if(num === "-") {
     return null
   }
 
-  return conversao
+  return Number(`${spliceNum[0].replace('.', '')}.${spliceNum[1]}`)
 }
