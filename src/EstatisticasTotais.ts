@@ -12,7 +12,7 @@ export default class Estatisticas {
     }, 0);
   }
 
-  public countyBy(prop: keyof Transacao, tipo: string): number {
+  public countyBy(prop: keyof Transacao, tipo: TransacaoPagamento | TransacaoStatus): number {
     const quantidade = this.transacoes.filter((item: Transacao) => {
       return item[prop] === tipo;
     }).length;

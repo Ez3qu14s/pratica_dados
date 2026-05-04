@@ -36,12 +36,21 @@
       border-top: 6px solid ghostwhite;
       padding-top: 1rem;
     }
+
+    #pagamento,
+    #status {
+      border-top: 6px solid ghostwhite;
+    }
   </style>
 </head>
 
 <body>
   <h2>Estatísticas</h2>
-  <p>Total: <span id="valor_total"></span></p>
+  <p id="valor_total">Total: <span></span></p>
+
+  <div id="pagamento"></div>
+  <div id="status"></div>
+
   <h2>Dados</h2>
   <table>
     <thead>

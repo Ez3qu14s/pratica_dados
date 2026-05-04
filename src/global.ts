@@ -1,6 +1,6 @@
 declare global {
   type TransacaoPagamento = "Boleto" | "Cartão de Crédito"
-  type TransacaoStatus = "Paga" | "Recusada pela operadora de cartão" | "Aguardando pagamento" | "Estornado"
+  type TransacaoStatus = "Paga" | "Recusada pela operadora de cartão" | "Aguardando pagamento" | "Estornada"
 
   interface TransacaoAPI {
     Nome: string;
