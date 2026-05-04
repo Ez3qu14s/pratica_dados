@@ -23,6 +23,6 @@ export default function preencherEstatisticas(transacoes: Transacao[]): void {
     <p>Recusada pela operadora de cartão: <span>${estatisticas.countyBy('status', 'Recusada pela operadora de cartão')}</span></p>
     <p>Aguardando Pagamento: <span>${estatisticas.countyBy('status', 'Aguardando pagamento')}</span></p>
     <p>Estornada: <span>${estatisticas.countyBy('status', 'Estornada')}</span></p>
-    <p>Dia com mais venda: <span></span></p>
+    <p>Dia com mais venda: <span>${estatisticas.melhorDia}</span></p>
   `
 }
