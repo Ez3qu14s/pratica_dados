@@ -8,8 +8,6 @@ async function handleData() {
   const transacoes = data.map(normalizarTransacao)
 
   console.log(transacoes);
-  
-  
 }
 
 handleData()
