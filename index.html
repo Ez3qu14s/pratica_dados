@@ -23,13 +23,13 @@
       padding: .5rem 1rem;
     }
 
+    table tr:nth-child(even) {
+      background-color: ghostwhite;
+    }
+
     h2,
     p {
       margin-left: 1rem;
-    }
-
-    table tr:nth-child(even) {
-      background-color: ghostwhite;
     }
 
     h2 {
@@ -37,8 +37,7 @@
       padding-top: 1rem;
     }
 
-    #pagamento,
-    #status {
+    div {
       border-top: 6px solid ghostwhite;
     }
   </style>
@@ -52,7 +51,7 @@
   <div id="status"></div>
 
   <h2>Dados</h2>
-  <table>
+  <table id="transacoes">
     <thead>
       <tr>
         <th>Nome</th>
